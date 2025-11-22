@@ -24,9 +24,9 @@ export default function Navbar() {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Services', href: '#services' },
+    // { name: 'Services', href: '#services' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    
   ];
 
   const scrollToSection = (href) => {
@@ -52,7 +52,7 @@ export default function Navbar() {
             transition={{ delay: 0.1 }}
             className="text-2xl font-heading font-bold gradient-text"
           >
-            Arslan Khizar
+            Usman Khizer
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -139,10 +139,9 @@ export default function Navbar() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navItems.length * 0.1 }}
-                  onClick={() => scrollToSection('#contact')}
+                  onClick={() => ('https://www.instagram.com/usmanedits__/')}
                   className="btn-primary w-full mt-4"
-                >
-                  Hire Me
+                >Hire Me
                 </motion.button>
               </div>
             </motion.div>
