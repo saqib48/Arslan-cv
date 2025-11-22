@@ -22,21 +22,12 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-<<<<<<< HEAD
   title: "USMAN KHIZER - Video Editor & Motion Designer",
   description: "Professional video editing and motion design services. Specializing in YouTube content, social media reels, commercials, and cinematic storytelling.",
   keywords: "video editing, motion graphics, YouTube editing, social media content, cinematic editing, freelance video editor",
   authors: [{ name: "USMAN KHIZER" }],
   creator: "USMAN KHIZER",
   publisher: "USMAN KHIZER Portfolio",
-=======
-  title: "ARSLAN KHIZER - Video Editor & Motion Designer",
-  description: "Professional video editing and motion design services. Specializing in YouTube content, social media reels, commercials, and cinematic storytelling.",
-  keywords: "video editing, motion graphics, YouTube editing, social media content, cinematic editing, freelance video editor",
-  authors: [{ name: "ARSLAN KHIZER" }],
-  creator: "ARSLAN KHIZER",
-  publisher: "ARSLAN KHIZER Portfolio",
->>>>>>> a304905f23dd097d291c67950c7bb5123f4f0d3e
   formatDetection: {
     email: false,
     address: false,
@@ -47,17 +38,10 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-<<<<<<< HEAD
     title: "USMAN KHIZER - Video Editor & Motion Designer",
     description: "Professional video editing and motion design services for creators and brands.",
     url: "https://arslankhizer.vercel.app/",
     siteName: "USMAN KHIZER Portfolio",
-=======
-    title: "ARSLAN KHIZER - Video Editor & Motion Designer",
-    description: "Professional video editing and motion design services for creators and brands.",
-    url: "https://arslankhizer.vercel.app/",
-    siteName: "ARSLAN KHIZER Portfolio",
->>>>>>> a304905f23dd097d291c67950c7bb5123f4f0d3e
     images: [
       {
         url: "/images/og-image.jpg",

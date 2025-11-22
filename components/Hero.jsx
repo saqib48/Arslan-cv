@@ -84,7 +84,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-text-secondary font-body mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-text-secondary font-body mb-0 max-w-3xl mx-auto leading-relaxed"
           >
             I transform raw footage into compelling stories that captivate audiences and drive results. 
             Specializing in YouTube content, social media reels, and cinematic storytelling.
@@ -97,20 +97,7 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
           >
-            <button
-              onClick={scrollToContact}
-              className="btn-primary text-lg px-8 py-4"
-            >
-              Hire Me Now
-            </button>
-            
-            <button
-              onClick={scrollToPortfolio}
-              className="btn-secondary text-lg px-8 py-4 flex items-center gap-3"
-            >
-              <Play size={20} />
-              Watch Showreel
-            </button>
+          
           </motion.div>
 
           {/* Stats */}
@@ -118,7 +105,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto pb-10"
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-heading font-bold gradient-text mb-2">500+</div>

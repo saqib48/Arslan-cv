@@ -23,10 +23,10 @@ export default function Navbar() {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Portfolio', href: '#portfolio' },
-    // { name: 'Services', href: '#services' },
     { name: 'Testimonials', href: '#testimonials' },
-    
+
   ];
 
   const scrollToSection = (href) => {
@@ -84,15 +84,22 @@ export default function Navbar() {
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </motion.button>
             
-            <motion.button
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4 }}
-              onClick={() => scrollToSection('#contact')}
-              className="btn-primary"
-            >
-              Hire Me
-            </motion.button>
+           {/* Theme Toggle & CTA */}
+<div className="hidden md:flex items-center space-x-4">
+  
+  <motion.a
+    initial={{ opacity: 0, scale: 0 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.4 }}
+    href="https://www.instagram.com/usmanedits__/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-primary"
+  >
+    Hire Me
+  </motion.a>
+</div>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -114,39 +121,46 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4 py-4 border-t border-border-color"
-            >
-              <div className="flex flex-col space-y-4">
-                {navItems.map((item, index) => (
-                  <motion.button
-                    key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={() => scrollToSection(item.href)}
-                    className="text-left font-body font-medium text-text-secondary hover:text-accent-primary transition-colors duration-300 py-2"
-                  >
-                    {item.name}
-                  </motion.button>
-                ))}
-                <motion.button
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: navItems.length * 0.1 }}
-                  onClick={() => ('https://www.instagram.com/usmanedits__/')}
-                  className="btn-primary w-full mt-4"
-                >Hire Me
-                </motion.button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+      {/* Mobile Navigation */}
+<AnimatePresence>
+  {isOpen && (
+    <motion.div
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: 'auto' }}
+      exit={{ opacity: 0, height: 0 }}
+      className="md:hidden mt-4 py-4 border-t border-border-color overflow-hidden"
+    >
+      <div className="flex flex-col space-y-4">
+        {navItems.map((item, index) => (
+          <motion.button
+            key={item.name}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.1 }}
+            onClick={() => scrollToSection(item.href)}
+            className="text-left font-body font-medium text-text-secondary hover:text-accent-primary transition-colors duration-300 py-2"
+          >
+            {item.name}
+          </motion.button>
+        ))}
+
+        {/* Hire Me Button */}
+        <motion.a
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: navItems.length * 0.1 }}
+          href="https://www.instagram.com/usmanedits__/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary w-full mt-4 text-center"
+        >
+          Hire Me
+        </motion.a>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
       </div>
     </motion.nav>
   );

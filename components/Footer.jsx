@@ -57,7 +57,7 @@ export default function Footer() {
                 transition={{ duration: 0.6 }}
               >
                 <h3 className="text-3xl font-heading font-bold gradient-text mb-4">
-                  Arslan Khizer
+                  Usman Khizer
                 </h3>
                 <p className="text-text-secondary font-body mb-6 max-w-md">
                   Professional video editor and motion designer creating compelling content 
@@ -68,15 +68,15 @@ export default function Footer() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 text-text-secondary">
                     <Mail size={16} className="text-accent-primary" />
-                    <span className="font-body text-sm">alex@videoeditor.com</span>
+                    <span className="font-body text-sm">usmankhizer05@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 text-text-secondary">
                     <Phone size={16} className="text-accent-primary" />
-                    <span className="font-body text-sm">+1 (555) 123-4567</span>
+                    <span className="font-body text-sm">+92 (320) 016-7000</span>
                   </div>
                   <div className="flex items-center gap-3 text-text-secondary">
                     <MapPin size={16} className="text-accent-primary" />
-                    <span className="font-body text-sm">Los Angeles, CA</span>
+                    <span className="font-body text-sm">LAHORE, PAK</span>
                   </div>
                 </div>
               </motion.div>
@@ -96,10 +96,10 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {[
                     { name: 'Home', href: '#home' },
+                    { name: 'About', href: '#about' },
+                    { name: 'Skills', href: '#skills' },
                     { name: 'Portfolio', href: '#portfolio' },
-                    { name: 'Services', href: '#services' },
                     { name: 'Testimonials', href: '#testimonials' },
-                    { name: 'Contact', href: '#contact' },
                   ].map((link) => (
                     <li key={link.name}>
                       <button
@@ -155,7 +155,7 @@ export default function Footer() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-text-muted font-body text-sm">
-                © {currentYear} Arslan Khizer. All rights reserved.
+                © {currentYear} Usman Khizer. All rights reserved.
               </p>
               
               <div className="flex items-center gap-6">
