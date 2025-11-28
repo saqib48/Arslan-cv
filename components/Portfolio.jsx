@@ -12,7 +12,6 @@ export default function Portfolio() {
 
   const categories = [
     { id: "short", name: "Short Form" },
-    { id: "long", name: "Long Form" },
     { id: "beforeAfter", name: "Before / After" },
     { id: "podcast", name: "Podcasts" },
     { id: "realestate", name: "Real Estate" }
@@ -45,12 +44,18 @@ const getYouTube = (url) => {
     { id: 4, category: "short", ...getYouTube("https://youtube.com/shorts/-626esvR5KQ?si=XsrNxpCMbNmfVaWw") },
     { id: 5, category: "short", ...getYouTube("https://youtube.com/shorts/a_4Owr6O7b4?si=lGQ_50cxc3bbneig") },
     { id: 6, category: "short", ...getYouTube("https://youtube.com/shorts/uk3s0fos7AY?si=3_aBQ9rGrleOMMKs") },
-    { id: 99, category: "long", ...getYouTube("https://www.youtube.com/watch?v=rUWxSEwctFU") },
-    { id: 67, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/Js8qULZ_qDw?si=pwmFuXbEZHtX6TKO") },
-    { id: 987, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/dgTDb85DYuA?si=TXt2m_31KYltr3b0") },
-    { id: 947, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/jleAkvRIuDA?si=SJOgAWtomZUH95qn") },
-    { id: 3298, category: "podcast", ...getYouTube("https://youtube.com/shorts/y6sFYWvoY4A?si=XUL9HWu5It5MsXLL") },
-    { id: 98, category: "podcast", ...getYouTube("https://www.youtube.com/watch?v=zpOULjyy-n8") },
+    { id: 7, category: "long", ...getYouTube("https://www.youtube.com/watch?v=rUWxSEwctFU") },
+    { id: 8, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/Js8qULZ_qDw?si=pwmFuXbEZHtX6TKO") },
+    { id: 9, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/dgTDb85DYuA?si=TXt2m_31KYltr3b0") },
+    { id: 10, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/jleAkvRIuDA?si=SJOgAWtomZUH95qn") },
+    { id: 11, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/A5-cSzsMIAg?si=mqcB9jQ_nF8OuAmS") },
+    { id: 12, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/P2gZGHesXis?si=lv9jWe1rWewYmslj") },
+    { id: 13, category: "beforeAfter", ...getYouTube("https://youtube.com/shorts/3hgoaMP9kXE?si=CfqQ0JzjaO9uwVR7") },
+    { id: 14, category: "podcast", ...getYouTube("https://youtube.com/shorts/W2JUZOs4pKQ?si=gHOsJJTV0KoUWrQE") },
+    { id: 15, category: "podcast", ...getYouTube("https://youtube.com/shorts/UeXDtx-nm58?si=DJo4__Lue5aIA7u2") },
+    { id: 16, category: "podcast", ...getYouTube("https://youtube.com/shorts/RgAJ8BaRyc8?si=xi876F7EpDsIv5sK") },
+    { id: 17, category: "realestate", ...getYouTube("https://youtube.com/shorts/AJIPIrAqqEs?si=NSkbQScL0DFkMEWF") },
+    { id: 18, category: "realestate", ...getYouTube("https://youtube.com/shorts/YIMLmrhagJc?si=y-asYkDjQ750lq1r") },
   ];
 
   const filtered = projects.filter((p) => p.category === selectedCategory);
