@@ -33,14 +33,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://arslankhizer.vercel.app"),
+  metadataBase: new URL("https://usmankhizer.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "USMAN KHIZER - Video Editor & Motion Designer",
     description: "Professional video editing and motion design services for creators and brands.",
-    url: "https://arslankhizer.vercel.app/",
+    url: "https://usmankhizer.vercel.app/",
     siteName: "USMAN KHIZER Portfolio",
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARSLAN KHIZER - Video Editor & Motion Designer",
+    title: "USMAN KHIZER - Video Editor & Motion Designer",
     description: "Professional video editing and motion design services for creators and brands.",
     images: ["/images/og-image.jpg"],
   },

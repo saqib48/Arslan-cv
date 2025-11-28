@@ -49,7 +49,7 @@ export default function About() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="w-full flex justify-center"
           >
-            <div className="w-64 h-64 rounded-3xl bg-bg-secondary/40 border border-border-color shadow-xl overflow-hidden">
+            <div className="w-68 h-70 rounded-3xl bg-bg-secondary/40 border border-border-color shadow-xl overflow-hidden">
               {/* Replace this with your image */}
               <img 
                 src="/images/Usman.jpg" 
