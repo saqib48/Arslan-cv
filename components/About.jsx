@@ -52,7 +52,7 @@ export default function About() {
             <div className="w-68 h-70 rounded-3xl bg-bg-secondary/40 border border-border-color shadow-xl overflow-hidden">
               {/* Replace this with your image */}
               <img 
-                src="/images/Usman.jpg" 
+                src="/images/Usman.jpeg" 
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
